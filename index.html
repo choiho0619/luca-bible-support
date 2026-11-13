@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="루카바이블 고객지원 · Luca Bible Support · ルカバイブル サポート · 路加圣经支持">
+  <title>루카바이블 | 고객지원 · Luca Bible Support</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; background: #fff; color: #222; font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Hiragino Sans", "PingFang SC", sans-serif; overflow-wrap: break-word; word-break: keep-all; }
+    :lang(ja), :lang(zh) { word-break: normal; line-break: strict; }
+    h1 { margin: 0 0 8px; font-size: clamp(1.65rem, 5vw, 2rem); line-height: 1.3; }
+    h2 { margin: 0 0 18px; font-size: 1.55rem; line-height: 1.4; }
+    h3 { margin: 28px 0 8px; font-size: 1.1rem; line-height: 1.4; }
+    p, ul, ol { margin: 0 0 14px; }
+    ul, ol { padding-left: 1.4em; }
+    li { margin-bottom: 6px; }
+    a { color: #145a9d; text-underline-offset: 3px; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #145a9d; outline-offset: 3px; }
+    header p, .meta { color: #666; }
+    .lang-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 34px; }
+    .lang-nav button { flex: 0 1 auto; padding: 7px 11px; border: 1px solid #ddd; border-radius: 6px; background: #fff; color: #145a9d; font: inherit; line-height: 1.4; cursor: pointer; }
+    .lang-nav button:hover { background: #f5f7f8; }
+    .lang-nav button[aria-selected="true"] { border-color: #145a9d; background: #eef5fb; font-weight: 600; }
+    .document { border-top: 1px solid #ddd; padding-top: 32px; }
+    .document[hidden] { display: none; }
+    .lead { font-size: 1.05rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 20px 0 30px; }
+    .feature { padding: 15px 16px; border: 1px solid #e2e2e2; border-radius: 8px; background: #fff; }
+    .feature strong { display: block; margin-bottom: 3px; }
+    .feature p { margin: 0; color: #555; font-size: .94rem; }
+    .steps { padding: 16px 18px 4px; border-left: 3px solid #a57b28; background: #faf8f1; }
+    .faq { margin-top: 14px; border-top: 1px solid #ddd; }
+    details { border-bottom: 1px solid #ddd; }
+    summary { padding: 15px 28px 15px 0; font-weight: 600; cursor: pointer; position: relative; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; position: absolute; right: 4px; top: 13px; color: #145a9d; font-size: 1.25rem; font-weight: 400; }
+    details[open] summary::after { content: "−"; }
+    details p { padding: 0 28px 14px 0; color: #444; }
+    .contact { margin-top: 34px; padding: 18px; border-left: 3px solid #a57b28; background: #faf8f1; }
+    .contact p:last-child { margin-bottom: 0; }
+    .mail-button { display: inline-block; margin-top: 2px; padding: 9px 13px; border-radius: 6px; background: #145a9d; color: #fff; text-decoration: none; font-weight: 600; }
+    .mail-button:hover { background: #0f477c; }
+    strong { font-weight: 600; }
+    footer { border-top: 1px solid #ddd; padding-top: 22px; margin-top: 52px; color: #666; font-size: .9rem; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    @media (max-width: 560px) {
+      body { padding: 24px 18px 64px; }
+      h2 { font-size: 1.35rem; }
+      .lang-nav button { flex: 1 1 calc(50% - 8px); }
+      .feature-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header id="top">
+    <h1>루카바이블 · Luca Bible</h1>
+    <p>고객지원 · Support · サポート · 支持</p>
+    <p class="meta">성경 읽기와 기록을 위한 조용한 공간</p>
+  </header>
+
+  <nav class="lang-nav" role="tablist" aria-label="언어 선택 / Language">
+    <button type="button" role="tab" id="tab-ko" aria-controls="ko" aria-selected="true" data-lang="ko" lang="ko">한국어</button>
+    <button type="button" role="tab" id="tab-en" aria-controls="en" aria-selected="false" data-lang="en" lang="en">English</button>
+    <button type="button" role="tab" id="tab-ja" aria-controls="ja" aria-selected="false" data-lang="ja" lang="ja">日本語</button>
+    <button type="button" role="tab" id="tab-zh" aria-controls="zh" aria-selected="false" data-lang="zh" lang="zh-Hans">简体中文</button>
+  </nav>
+
+  <main>
+    <section class="document" id="ko" role="tabpanel" aria-labelledby="tab-ko" lang="ko">
+      <h2>루카바이블 고객지원</h2>
+      <p class="lead">루카바이블은 성경 읽기, 검색, 기록, 통독과 암송을 한곳에서 사용할 수 있는 무료 성경 앱입니다. 로그인하지 않아도 대부분의 기능을 사용할 수 있으며, 기록은 먼저 이 기기에 저장됩니다.</p>
+      <div class="feature-grid" aria-label="주요 기능">
+        <div class="feature"><strong>성경 읽기와 검색</strong><p>역본을 골라 읽고 원하는 말씀을 검색합니다.</p></div>
+        <div class="feature"><strong>말씀 기록</strong><p>형광펜, 밑줄, 북마크와 말씀 노트를 남깁니다.</p></div>
+        <div class="feature"><strong>통독 계획</strong><p>계획을 만들고 매일 읽은 진도를 기록합니다.</p></div>
+        <div class="feature"><strong>말씀 암송</strong><p>단계별로 학습하고 복습 일정을 따라 암송합니다.</p></div>
+      </div>
+
+      <h3>로그인 및 계정 삭제</h3>
+      <p>이메일 또는 Apple로 Luca 계정에 로그인할 수 있습니다. 로그인하지 않아도 성경 읽기·검색과 기기 기록을 사용할 수 있습니다. 계정 삭제는 <strong>Luca 계정 → 계정 삭제</strong>에서 본인 확인 후 진행할 수 있으며 되돌릴 수 없습니다. 이메일 비밀번호가 있는 계정은 <a href="https://lucajournal.com/account/delete">웹 계정 삭제 페이지</a>에서도 삭제할 수 있습니다.</p>
+
+      <h3>백업·복원</h3>
+      <div class="steps">
+        <ol>
+          <li>Luca 계정으로 로그인합니다.</li>
+          <li><strong>내 기록 보관함</strong>에서 <strong>백업하기</strong> 또는 <strong>복원하기</strong>를 선택합니다.</li>
+          <li>안내되는 기록 수를 확인한 뒤 작업을 확정합니다.</li>
+        </ol>
+      </div>
+      <p>로그인만으로 기록이 자동 업로드되지는 않습니다. 복원은 이 기기의 기존 기록을 지우거나 덮어쓰지 않습니다. 기기와 계정의 기록이 다르면 양쪽을 보존하고 선택할 수 있도록 안내합니다.</p>
+
+      <h3>오프라인 성경</h3>
+      <p>지원되는 성경 본문은 역본 선택 화면에서 기기에 내려받을 수 있습니다. 다운로드가 끝나면 인터넷 연결 없이 해당 본문을 읽고 검색할 수 있습니다. 처음 다운로드하거나 다시 받으려면 네트워크 연결이 필요합니다.</p>
+
+      <h3>자주 묻는 질문</h3>
+      <div class="faq">
+        <details><summary>로그아웃하면 기기의 기록이 사라지나요?</summary><p>아니요. 로그아웃해도 이 기기의 형광펜, 노트, 북마크와 읽기 기록은 남습니다. 계정에 보관하려면 로그아웃 전에 내 기록 보관함에서 백업해 주세요.</p></details>
+        <details><summary>앱을 삭제하면 기록을 복구할 수 있나요?</summary><p>계정에 백업한 기록은 다시 로그인해 복원할 수 있습니다. 백업하지 않은 기기 기록은 앱 삭제 후 복구할 수 없을 수 있습니다.</p></details>
+        <details><summary>후원 결제로 기능이 열리나요?</summary><p>아니요. 후원은 무료 앱 운영을 위한 자율 후원이며 모든 기능은 후원 여부와 관계없이 동일합니다. 결제는 Apple 인앱결제로 처리됩니다.</p></details>
+        <details><summary>후원 결제에 문제가 있으면 어떻게 하나요?</summary><p>결제가 완료되지 않았거나 중복 결제·환불 등 결제 내역 관련 문제는 Apple의 구매 내역과 지원 절차를 먼저 확인해 주세요. 앱 화면이나 결제 상태 표시 문제는 아래 이메일로 기기 종류, iOS 버전과 상황을 알려 주세요. 비밀번호나 결제 정보는 보내지 마세요.</p></details>
+        <details><summary>비밀번호를 잊었습니다.</summary><p>LucaJournal 웹에서 비밀번호 재설정을 진행할 수 있습니다. Apple로 가입한 계정은 Apple 로그인을 이용해 주세요.</p></details>
+      </div>
+
+      <div class="contact">
+        <h3>문의하기</h3>
+        <p>문제를 재현하는 순서, 사용 언어, 기기 종류와 iOS 버전을 적어 보내 주시면 확인에 도움이 됩니다. 비밀번호, 인증 코드, 결제 정보는 보내지 마세요.</p>
+        <p><a class="mail-button" href="mailto:yaho0619@naver.com?subject=%EB%A3%A8%EC%B9%B4%EB%B0%94%EC%9D%B4%EB%B8%94%20%EB%AC%B8%EC%9D%98">yaho0619@naver.com</a></p>
+      </div>
+    </section>
+
+    <section class="document" id="en" role="tabpanel" aria-labelledby="tab-en" lang="en" hidden>
+      <h2>Luca Bible Support</h2>
+      <p class="lead">Luca Bible is a free Bible app for reading, searching, taking notes, following reading plans, and memorizing Scripture. Most features work without signing in, and your records are saved on your device first.</p>
+      <div class="feature-grid" aria-label="Key features">
+        <div class="feature"><strong>Read and search</strong><p>Choose a translation, read Scripture, and search for passages.</p></div>
+        <div class="feature"><strong>Bible records</strong><p>Add highlights, underlines, bookmarks, and verse notes.</p></div>
+        <div class="feature"><strong>Reading plans</strong><p>Create a plan and track what you read each day.</p></div>
+        <div class="feature"><strong>Verse memory</strong><p>Learn in stages and review verses on a schedule.</p></div>
+      </div>
+
+      <h3>Sign-in and account deletion</h3>
+      <p>You can sign in to your Luca Account with email or Apple. You can still read and search the Bible and keep records on your device without signing in. To permanently delete your account, go to <strong>Luca Account → Delete Account</strong> and verify your identity. Accounts with an email password can also use the <a href="https://lucajournal.com/account/delete">web account deletion page</a>.</p>
+
+      <h3>Backup and restore</h3>
+      <div class="steps"><ol><li>Sign in to your Luca Account.</li><li>Open <strong>My Records Vault</strong> and choose <strong>Back Up</strong> or <strong>Restore</strong>.</li><li>Review the record counts and confirm the operation.</li></ol></div>
+      <p>Signing in does not upload records automatically. Restore does not erase or overwrite existing records on your device. If device and account records differ, the app keeps both and lets you choose.</p>
+
+      <h3>Offline Bible</h3>
+      <p>Supported Bible text can be downloaded to your device from the translation picker. Once the download finishes, you can read and search that text without an internet connection. A connection is required for the first download or to download it again.</p>
+
+      <h3>Frequently asked questions</h3>
+      <div class="faq">
+        <details><summary>Will signing out remove records on my device?</summary><p>No. Highlights, notes, bookmarks, and reading records remain on this device after sign-out. Back them up in My Records Vault before signing out if you also want to keep them in your account.</p></details>
+        <details><summary>Can I recover records after deleting the app?</summary><p>You can sign in and restore records that were backed up to your account. Device-only records that were not backed up may not be recoverable after deleting the app.</p></details>
+        <details><summary>Does a support payment unlock features?</summary><p>No. Support is a voluntary contribution to help operate the free app. Every feature remains the same whether or not you contribute. Payments are processed by Apple In-App Purchase.</p></details>
+        <details><summary>What should I do about a support payment problem?</summary><p>For incomplete, duplicate, or refund-related transactions, first check your Apple purchase history and Apple Support options. For an app display or purchase-status issue, email us with your device model, iOS version, and what happened. Never send a password or payment details.</p></details>
+        <details><summary>I forgot my password.</summary><p>Reset your password on the LucaJournal website. If your account was created with Apple, use Sign in with Apple.</p></details>
+      </div>
+
+      <div class="contact"><h3>Contact support</h3><p>Include the steps that reproduce the issue, your app language, device model, and iOS version. Never send passwords, verification codes, or payment information.</p><p><a class="mail-button" href="mailto:yaho0619@naver.com?subject=Luca%20Bible%20Support">yaho0619@naver.com</a></p></div>
+    </section>
+
+    <section class="document" id="ja" role="tabpanel" aria-labelledby="tab-ja" lang="ja" hidden>
+      <h2>ルカバイブル サポート</h2>
+      <p class="lead">ルカバイブルは、聖書の閲読・検索、記録、通読、暗唱を一つの場所で使える無料の聖書アプリです。ログインしなくてもほとんどの機能を利用でき、記録はまずこのデバイスに保存されます。</p>
+      <div class="feature-grid" aria-label="主な機能">
+        <div class="feature"><strong>聖書の閲読と検索</strong><p>訳本を選んで読み、必要な聖句を検索できます。</p></div>
+        <div class="feature"><strong>みことばの記録</strong><p>ハイライト、下線、ブックマーク、みことばメモを残せます。</p></div>
+        <div class="feature"><strong>通読計画</strong><p>計画を作成し、毎日の読書進捗を記録できます。</p></div>
+        <div class="feature"><strong>聖句の暗唱</strong><p>段階ごとに学習し、日程に沿って復習できます。</p></div>
+      </div>
+
+      <h3>ログインとアカウント削除</h3>
+      <p>メールまたはAppleでLucaアカウントにログインできます。ログインしなくても聖書の閲読・検索とデバイス上の記録を利用できます。アカウントを完全に削除するには、<strong>Lucaアカウント → アカウント削除</strong>で本人確認を行ってください。メール用パスワードがあるアカウントは、<a href="https://lucajournal.com/account/delete">ウェブのアカウント削除ページ</a>からも削除できます。</p>
+
+      <h3>バックアップと復元</h3>
+      <div class="steps"><ol><li>Lucaアカウントにログインします。</li><li><strong>記録保管庫</strong>を開き、<strong>バックアップ</strong>または<strong>復元</strong>を選びます。</li><li>表示された記録数を確認して実行します。</li></ol></div>
+      <p>ログインしただけで記録が自動的にアップロードされることはありません。復元しても、このデバイスにある記録は削除・上書きされません。デバイスとアカウントの記録が異なる場合は両方を保持し、選択できるよう案内します。</p>
+
+      <h3>オフライン聖書</h3>
+      <p>対応する聖書本文は、訳本の選択画面からデバイスにダウンロードできます。完了後はインターネットに接続せずに、その本文を読んだり検索したりできます。初回や再ダウンロードにはネットワーク接続が必要です。</p>
+
+      <h3>よくある質問</h3>
+      <div class="faq">
+        <details><summary>ログアウトするとデバイスの記録は消えますか？</summary><p>いいえ。ハイライト、メモ、ブックマーク、読書記録はログアウト後もこのデバイスに残ります。アカウントにも保管したい場合は、ログアウト前に記録保管庫でバックアップしてください。</p></details>
+        <details><summary>アプリを削除した後に記録を復元できますか？</summary><p>アカウントにバックアップした記録は、再ログインして復元できます。バックアップしていないデバイス内の記録は、アプリ削除後に復元できない場合があります。</p></details>
+        <details><summary>支援の決済で機能が解放されますか？</summary><p>いいえ。支援は無料アプリの運営を助ける任意のものです。支援の有無にかかわらず、すべての機能は同じです。決済はAppleのアプリ内課金で処理されます。</p></details>
+        <details><summary>支援の決済に問題がある場合は？</summary><p>未完了、重複、返金など取引に関する問題は、まずAppleの購入履歴とサポートをご確認ください。アプリの表示や購入状態に問題がある場合は、デバイス、iOSのバージョン、状況をメールでお知らせください。パスワードや決済情報は送らないでください。</p></details>
+        <details><summary>パスワードを忘れました。</summary><p>LucaJournalのウェブサイトでパスワードを再設定できます。Appleで作成したアカウントは「Appleでサインイン」をお使いください。</p></details>
+      </div>
+
+      <div class="contact"><h3>お問い合わせ</h3><p>問題を再現する手順、アプリの言語、デバイス、iOSのバージョンをお知らせください。パスワード、認証コード、決済情報は送らないでください。</p><p><a class="mail-button" href="mailto:yaho0619@naver.com?subject=%E3%83%AB%E3%82%AB%E3%83%90%E3%82%A4%E3%83%96%E3%83%AB%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">yaho0619@naver.com</a></p></div>
+    </section>
+
+    <section class="document" id="zh" role="tabpanel" aria-labelledby="tab-zh" lang="zh-Hans" hidden>
+      <h2>路加圣经支持</h2>
+      <p class="lead">路加圣经是一款免费圣经应用，可用于阅读和搜索圣经、记录、通读及背诵。不登录也能使用大部分功能，记录会先保存在本设备上。</p>
+      <div class="feature-grid" aria-label="主要功能">
+        <div class="feature"><strong>阅读与搜索</strong><p>选择译本阅读圣经，并搜索所需经文。</p></div>
+        <div class="feature"><strong>经文记录</strong><p>添加高亮、下划线、书签和经文笔记。</p></div>
+        <div class="feature"><strong>通读计划</strong><p>创建计划并记录每天的阅读进度。</p></div>
+        <div class="feature"><strong>经文背诵</strong><p>分阶段学习，并按照日程复习经文。</p></div>
+      </div>
+
+      <h3>登录与删除账户</h3>
+      <p>你可以使用电子邮件或Apple登录Luca账户。不登录也可以阅读、搜索圣经并使用本设备上的记录。如需永久删除账户，请前往<strong>Luca账户 → 删除账户</strong>并验证身份。设有电子邮件密码的账户也可以使用<a href="https://lucajournal.com/account/delete">网页账户删除页面</a>。</p>
+
+      <h3>备份与恢复</h3>
+      <div class="steps"><ol><li>登录Luca账户。</li><li>打开<strong>我的记录保管库</strong>，选择<strong>备份</strong>或<strong>恢复</strong>。</li><li>确认显示的记录数量后执行操作。</li></ol></div>
+      <p>仅登录不会自动上传记录。恢复不会删除或覆盖本设备已有的记录。如果设备和账户中的记录不同，应用会保留双方记录并让你选择。</p>
+
+      <h3>离线圣经</h3>
+      <p>支持的圣经文本可从译本选择界面下载到设备。下载完成后，无需联网即可阅读和搜索该文本。首次下载或重新下载时需要网络连接。</p>
+
+      <h3>常见问题</h3>
+      <div class="faq">
+        <details><summary>退出登录后，本设备的记录会消失吗？</summary><p>不会。退出登录后，高亮、笔记、书签和阅读记录仍保留在本设备上。如需同时保存到账户，请在退出前到“我的记录保管库”进行备份。</p></details>
+        <details><summary>删除应用后可以恢复记录吗？</summary><p>已备份到账户的记录可以在重新登录后恢复。仅保存在设备且没有备份的记录，在删除应用后可能无法恢复。</p></details>
+        <details><summary>支持款项会解锁功能吗？</summary><p>不会。支持款项是用于帮助运营免费应用的自愿支持。无论是否支持，所有功能都相同。付款由Apple App内购买处理。</p></details>
+        <details><summary>支持款项出现问题时该怎么办？</summary><p>对于未完成、重复扣款或退款等交易问题，请先查看Apple购买记录和Apple支持。若应用显示或购买状态有问题，请通过电子邮件告知设备型号、iOS版本和具体情况。请勿发送密码或付款信息。</p></details>
+        <details><summary>忘记密码怎么办？</summary><p>可以在LucaJournal网站重置密码。如果账户是通过Apple创建的，请使用“通过Apple登录”。</p></details>
+      </div>
+
+      <div class="contact"><h3>联系支持</h3><p>请提供重现问题的步骤、应用语言、设备型号和iOS版本。请勿发送密码、验证码或付款信息。</p><p><a class="mail-button" href="mailto:yaho0619@naver.com?subject=%E8%B7%AF%E5%8A%A0%E5%9C%A3%E7%BB%8F%E6%94%AF%E6%8C%81">yaho0619@naver.com</a></p></div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://choiho0619.github.io/luca-bible-privacy/">개인정보처리방침 · Privacy Policy</a>
+    <a href="#top">맨 위로 · Back to top</a>
+  </footer>
+
+  <script>
+    (() => {
+      const supported = ['ko', 'en', 'ja', 'zh'];
+      const tabs = [...document.querySelectorAll('[role="tab"]')];
+      const panels = [...document.querySelectorAll('[role="tabpanel"]')];
+
+      function selectLanguage(language, updateHash = true) {
+        const lang = supported.includes(language) ? language : 'ko';
+        tabs.forEach((tab) => tab.setAttribute('aria-selected', String(tab.dataset.lang === lang)));
+        panels.forEach((panel) => { panel.hidden = panel.id !== lang; });
+        document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
+        if (updateHash) history.replaceState(null, '', `#${lang}`);
+      }
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => selectLanguage(tab.dataset.lang));
+        tab.addEventListener('keydown', (event) => {
+          if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+          event.preventDefault();
+          const next = (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+          tabs[next].focus();
+          selectLanguage(tabs[next].dataset.lang);
+        });
+      });
+
+      const hashLanguage = location.hash.slice(1);
+      const browserLanguage = navigator.language.toLowerCase();
+      const initial = supported.includes(hashLanguage)
+        ? hashLanguage
+        : browserLanguage.startsWith('ja') ? 'ja'
+        : browserLanguage.startsWith('zh') ? 'zh'
+        : browserLanguage.startsWith('en') ? 'en'
+        : 'ko';
+      selectLanguage(initial, Boolean(location.hash));
+    })();
+  </script>
+</body>
+</html>
